@@ -4,8 +4,117 @@
     <meta charset="UTF-8">
     <title>Responsive Page</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
+    <header class="header" >
+        <div class="header__title">
+            <h1 class="header__title-main">WEB SITE</h1>
+            <h3 class="header__title-sub">Additional text</h3>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__panel">
+                <li class="header__panel-item"><a class="header__panel-link" href="#">HOME</a></li>
+                <li class="header__panel-item"><a class="header__panel-link" href="#">ABOUT</a></li>
+                <li class="header__panel-item"><a class="header__panel-link" href="#">SERVICES</a></li>
+                <li class="header__panel-item"><a class="header__panel-link" href="#">PORTFOLIO</a></li>
+                <li class="header__panel-item"><a class="header__panel-link" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__content">
+                <img class="banner__content-image" src="assets/banner.png" alt="banner"/>
+            </div>
+        </section>
 
+        <section class="title">
+            <div class="title__content">
+                <p class="title__content-main">WEB SITE</p>
+                <p class="title__content-sub">Additional text</p>
+                <button class="title__content-button">
+                    <img class="title__content-button-img" src="assets/arrow.png" alt="arrow"/>
+                    GO
+                </button>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="row__content">
+                <div class="row__content-item">
+                    <span class="row__content-span">
+                        <img class="row__content-img" src="assets/cloud.png" alt="cloud"/>
+                    </span>
+                    <p class="row__content-item-title">Cloud</p>
+                    <p class="row__content-item-text">info</p>
+                </div>
+                <div class="row__content-item">
+                    <span class="row__content-span">
+                        <img class="row__content-img" src="assets/umbrella.png" alt="umbrella"/>
+                    </span>
+                    <p class="row__content-item-title">Umbrella</p>
+                    <p class="row__content-item-text">info</p>
+                </div>
+                <div class="row__content-item">
+                    <span class="row__content-span">
+                        <img class="row__content-img" src="assets/key.png" alt="key"/>
+                    </span>
+                    <p class="row__content-item-title">Key</p>
+                    <p class="row__content-item-text">info</p>
+                </div>
+                <div class="row__content-item">
+                    <span class="row__content-span">
+                        <img class="row__content-img" src="assets/settings.png" alt="settings"/>
+                    </span>
+                    <p class="row__content-item-title">Settings</p>
+                    <p class="row__content-item-text">info</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__content">
+                <p class="subscribe__content-text">SUBSCRIBE</p>
+                <input class="subscribe__content-input" type="text" placeholder="some text"/>
+                <input class="subscribe__content-input" type="text" placeholder="some text"/>
+                <button class="subscribe__content-button">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </section>
+
+        <section class="worker">
+            <!--workers panel-->
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__panel">
+            <li class="footer__panel-item">
+                <p class="footer__panel-text">DESIGNED BY</p>
+                <a class="footer__panel-link" href="#">HOME</a>
+            </li>
+            <li class="footer__panel-item">
+                <p class="footer__panel-text">PHOTOS FROM</p>
+                <a class="footer__panel-link" href="#">ABOUT</a>
+            </li>
+            <li class="footer__panel-item">
+                <p class="footer__panel-text">COPYRIGHTS</p>
+                <!--                copyright subtext-->
+            </li>
+            <li class="footer__panel-item">
+                <p class="footer__panel-text">FOLLOW US</p>
+                <a class="footer__panel-link" href="#">
+                    <!--                    + image-->
+                    TWITTER
+                </a>
+                <a class="footer__panel-link" href="#">
+                    <!--                    + image-->
+                    FACEBOOK
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>

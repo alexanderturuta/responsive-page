@@ -1,18 +1,241 @@
-.body {
-    font-family: 'Fjalla One', sans-serif;
+/*general styles & constants*/
+:root {
+    --button-bg-color: #e24f43;
+    --button-fg-color: #ffffff;
+    --subscribe-title-color: #ffffff;
+    --subscribe-bg-color: #5c5c5c;
+    --main-text-color: #5c5c5c;
+    --sub-text-color: #a5a5a5;
+    --main-font: 'Fjalla One', sans-serif;
+    --sub-font: 'Source San Pro', sans-serif;
 }
 
+/*1170x440*/
+/*unified blocks styles*/
+.body {
+    font-family: var(--main-font);
+    margin: auto;
+    max-width: 1170px;
+}
+
+.button {
+    background: var(--button-bg-color);
+    color: var(--button-fg-color);
+    border: none;
+    border-radius: 2px;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+/*##header*/
+.header {
+    top: 0;
+    width: 100%;
+    height: 6vw;
+}
+
+.header__title {
+    float: left;
+}
+
+.header__title-main {
+    color: var(--main-text-color);
+}
+
+.header__title-sub {
+    color: var(--sub-text-color);
+}
+
+.header__nav {
+    float: right;
+}
+
+.header__panel {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header__panel-item {
+    float: left;
+}
+
+.header__panel-link {
+    color: var(--sub-text-color);
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header__panel-link:hover {
+    background-color: var(--button-bg-color);
+    color: var(--button-fg-color);
+}
+
+/*##title*/
+
+.title__content-text {
+    color: var(--main-text-color);
+}
+
+.title__content-subtext {
+    color: var(--sub-text-color);
+}
+
+/*##row*/
+
+.row__content {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.row__content-item {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto;
+}
+
+/*rounded images*/
 .row__content-span {
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid gray;
-    display: inline-block;
+    border: 2px solid var(--sub-text-color);
+    display: flex;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 130px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    min-width: 80px;
 }
 
 .row__content-img {
-    display: block;
-    margin: 25% auto;
-    width: 50%;
+    display: inline;
+    color: var(--button-bg-color);
+    font-size: 40px;
+}
+
+.row__content-article {
+    margin: 5%;
+}
+
+.row__content-title {
+    color: var(--main-text-color);
+}
+
+.row__content-text {
+    color: var(--sub-text-color);
+    margin-top: 10px;
+}
+
+/*##subscribe*/
+
+.subscribe__content {
+    border-radius: 2px;
+    background: var(--subscribe-bg-color);
+}
+
+.subscribe__content-text {
+    color: var(--subscribe-title-color);
+}
+
+.subscribe__content-input {
+    border: none;
+    border-radius: 2px;
+}
+
+/*##worker*/
+
+.worker-panel__content {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.worker-panel__content-item {
+    width: 24%;
+}
+
+.worker-panel__content-img {
+    width: 100%;
+}
+
+.worker-panel__content-title {
+    color: var(--main-text-color);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.worker-panel__content-text {
+    color: var(--sub-text-color);
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.worker-panel__content-button {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+/*##footer*/
+
+.footer__panel {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.footer__panel-title {
+    color: var(--main-text-color);
+}
+
+.footer__panel-link {
+    color: var(--sub-text-color);
+    text-decoration: none;
+}
+
+.footer__panel-subtext {
+    color: var(--sub-text-color);
+}
+
+/*##small screen*/
+@media only screen and (max-width: 641px) {
+
+    .row__content-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .worker-panel__content-item {
+        width: 48%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    .worker-panel__content {
+        justify-content: center;
+    }
+    .worker-panel__content-item {
+        width: 75%;
+        margin-top: 10px;
+    }
 }

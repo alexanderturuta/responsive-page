@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="body">
     <header class="header" >
-        <div class="header__title">
-            <h1 class="header__title-main">WEB SITE</h1>
-            <h3 class="header__title-sub">Additional text</h3>
-        </div>
         <nav class="header__nav">
             <ul class="header__panel">
                 <li class="header__panel-item"><a class="header__panel-link" href="#">HOME</a></li>
@@ -22,6 +20,10 @@
                 <li class="header__panel-item"><a class="header__panel-link" href="#">CONTACT</a></li>
             </ul>
         </nav>
+        <div class="header__title">
+            <h1 class="text header__title-main">WEBSITE NAME</h1>
+            <h3 class="text header__title-sub">lorem ipsum dolor sit amet</h3>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -32,11 +34,15 @@
 
         <section class="title">
             <div class="title__content">
-                <p class="title__content-main">WEB SITE</p>
-                <p class="title__content-sub">Additional text</p>
-                <button class="title__content-button">
+                <p class="text title__content-text">
+                    DONEC NEC JUSTO EGET FELIS FACILISIS FERMEN
+                </p>
+                <p class="text title__content-subtext">
+                    ALIQUAM PORTTITOR MAURIS SIT AMET ORCI. AENEAN DIGNISSIM NTEGE
+                </p>
+                <button class="button title__content-button">
                     <img class="title__content-button-img" src="assets/arrow.png" alt="arrow"/>
-                    GO
+                    Euroting negesting
                 </button>
             </div>
         </section>
@@ -45,72 +51,121 @@
             <div class="row__content">
                 <div class="row__content-item">
                     <span class="row__content-span">
-                        <img class="row__content-img" src="assets/cloud.png" alt="cloud"/>
+                        <i class="fas fa-cloud-upload-alt row__content-img"></i>
                     </span>
-                    <p class="row__content-item-title">Cloud</p>
-                    <p class="row__content-item-text">info</p>
+                    <div class="row__content-article">
+                        <p class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</p>
+                        <p class="text row__content-text">Praesent dapibus, neque id cursus faucibus, tortor neque egesta</p>
+                    </div>
                 </div>
                 <div class="row__content-item">
                     <span class="row__content-span">
-                        <img class="row__content-img" src="assets/umbrella.png" alt="umbrella"/>
+                        <i class="fas fa-umbrella row__content-img"></i>
                     </span>
-                    <p class="row__content-item-title">Umbrella</p>
-                    <p class="row__content-item-text">info</p>
+                    <div class="row__content-article">
+                    <p class="text row__content-title">LOREM IPSUM DOLOR SIT AMET</p>
+                    <p class="text row__content-text">Caesent dapibus, neque id cursus faucibus, tortor neque egestas</p>
+                    </div>
                 </div>
                 <div class="row__content-item">
                     <span class="row__content-span">
-                        <img class="row__content-img" src="assets/key.png" alt="key"/>
+                        <i class="fas fa-wrench row__content-img"></i>
                     </span>
-                    <p class="row__content-item-title">Key</p>
-                    <p class="row__content-item-text">info</p>
+                    <div class="row__content-article">
+                    <p class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</p>
+                    <p class="text row__content-text">Ajaesent dapibus, neque id cursus faucibus, tortor neque egesta</p>
+                    </div>
                 </div>
                 <div class="row__content-item">
                     <span class="row__content-span">
-                        <img class="row__content-img" src="assets/settings.png" alt="settings"/>
+                        <i class="fas fa-cogs row__content-img"></i>
                     </span>
-                    <p class="row__content-item-title">Settings</p>
-                    <p class="row__content-item-text">info</p>
+                    <div class="row__content-article">
+                    <p class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</p>
+                    <p class="text row__content-text">Sent dapibus, neque id cursus faucibus, tortor neque egestas au</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="subscribe">
             <div class="subscribe__content">
-                <p class="subscribe__content-text">SUBSCRIBE</p>
-                <input class="subscribe__content-input" type="text" placeholder="some text"/>
-                <input class="subscribe__content-input" type="text" placeholder="some text"/>
-                <button class="subscribe__content-button">
+                <p class="text subscribe__content-text">DONEC NEC JUS</p>
+                <input class="subscribe__content-input" type="text" placeholder="your name here...."/>
+                <input class="subscribe__content-input" type="text" placeholder="your email here...."/>
+                <button class="button subscribe__content-button">
                     SUBSCRIBE
                 </button>
             </div>
         </section>
 
-        <section class="worker">
-            <!--workers panel-->
+        <section class="worker-panel">
+            <div class="worker-panel__content">
+                <div class="worker-panel__content-item">
+                    <img class="worker-panel__content-img" src="assets/face1.png" alt="face"/>
+                    <p class="text worker-panel__content-title">
+                        ALIQUAM PORTTITO
+                    </p>
+                    <p class="text worker-panel__content-text">
+                        Praesent dapibus, neque id cursus faucibus, tortor neque egesta
+                    </p>
+                    <button class="button worker-panel__content-button">MORE</button>
+                </div>
+                <div class="worker-panel__content-item">
+                    <img class="worker-panel__content-img" src="assets/face2.png" alt="face"/>
+                    <p class="text worker-panel__content-title">
+                        ALIQUAM PORTTITO
+                    </p>
+                    <p class="text worker-panel__content-text">
+                        Lore esent dapibus, neque id cursus faucibus, tortor neque eges
+                    </p>
+                    <button class="button worker-panel__content-button">MORE</button>
+                </div>
+                <div class="worker-panel__content-item">
+                    <img class="worker-panel__content-img" src="assets/face3.png" alt="face"/>
+                    <p class="text worker-panel__content-title">
+                        ALIQUAM PORTTITO
+                    </p>
+                    <p class="text worker-panel__content-text">
+                        Dolo sent dapibus, neque id cursus faucibus, tortor neque egest
+                    </p>
+                    <button class="button worker-panel__content-button">MORE</button>
+                </div>
+                <div class="worker-panel__content-item">
+                    <img class="worker-panel__content-img" src="assets/face4.png" alt="face"/>
+                    <p class="text worker-panel__content-title">
+                        ALIQUAM PORTTITO
+                    </p>
+                    <p class="text worker-panel__content-text">
+                        Set esent dapibus, neque id cursus faucibus, tortor neque egest
+                    </p>
+                    <button class="button worker-panel__content-button">MORE</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <ul class="footer__panel">
             <li class="footer__panel-item">
-                <p class="footer__panel-text">DESIGNED BY</p>
-                <a class="footer__panel-link" href="#">HOME</a>
+                <p class="text footer__panel-title">DESIGNED BY</p>
+                <a class="footer__panel-link" href="http://www.alltemplateneeds.com">www.alltemplateneeds.com</a>
             </li>
             <li class="footer__panel-item">
-                <p class="footer__panel-text">PHOTOS FROM</p>
-                <a class="footer__panel-link" href="#">ABOUT</a>
+                <p class="text footer__panel-title">PHOTOS FROM</p>
+                <a class="footer__panel-link" href="http://www.wallpaperswide.com">www.wallpaperswide.com</a>
             </li>
             <li class="footer__panel-item">
-                <p class="footer__panel-text">COPYRIGHTS</p>
-                <!--                copyright subtext-->
+                <p class="text footer__panel-title">COPYRIGHTS</p>
+                <p class="text footer__panel-subtext">@2013. Sitename. All rights reserved</p>
             </li>
             <li class="footer__panel-item">
-                <p class="footer__panel-text">FOLLOW US</p>
-                <a class="footer__panel-link" href="#">
-                    <!--                    + image-->
+                <p class="text footer__panel-title">FOLLOW US</p>
+                <a class="footer__panel-link" href="http://twitter.com">
+                    <img class="footer__panel-img" src="assets/twitter.png" alt="twitter"/>
                     TWITTER
                 </a>
-                <a class="footer__panel-link" href="#">
-                    <!--                    + image-->
+                <a class="footer__panel-link" href="http://facebook.com">
+                    <img class="footer__panel-img" src="assets/facebook.png" alt="facebook"/>
                     FACEBOOK
                 </a>
             </li>

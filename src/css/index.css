@@ -88,6 +88,11 @@
     color: var(--sub-text-color);
 }
 
+.title__content-img {
+    color: var(--button-fg-color);
+    font-size: 20px;
+}
+
 /*##row*/
 
 .row__content {
@@ -211,6 +216,11 @@
 
 .footer__panel-subtext {
     color: var(--sub-text-color);
+}
+
+.footer__panel-img {
+    color: var(--button-bg-color);
+    font-size: 14px;
 }
 
 /*##small screen*/

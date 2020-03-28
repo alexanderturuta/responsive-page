@@ -72,10 +72,6 @@
     color: var(--sub-text-color);
 }
 
-.header__nav {
-    float: right;
-}
-
 .header__panel {
     overflow: hidden;
     margin: 0;
@@ -103,10 +99,6 @@
 }
 
 /*##banner*/
-
-.banner__content {
-
-}
 
 .banner__content-container {
     display: flex;
@@ -288,14 +280,14 @@
 .subscribe__content-input {
     border: none;
     border-radius: 2px;
-    width: 35%;
+    width: 33%;
     padding: 10px 15px;
     font-family: var(--sub-font);
     font-size: var(--p-link-font);
 }
 
 .subscribe__content-button {
-    width: 15%;
+    width: 20%;
     padding: 10px 15px;
     font-size: var(--h3-font);
 }
@@ -389,7 +381,23 @@
 
 /*##small screen*/
 
+@media only screen and (max-width: 851px) {
+
+    :root {
+        --h1-font: 28px;
+        --h2-font: 18px;
+        --h3-font: 16px;
+    }
+}
+
 @media only screen and (max-width: 769px) {
+
+    :root {
+        --h1-font: 27px;
+        --h2-font: 17px;
+        --h3-font: 15px;
+        --p-link-font: 13px;
+    }
 
     .worker-panel__content-item {
         margin-top: 10px;
@@ -410,7 +418,7 @@
         align-items: center;
         justify-content: space-around;
         height: 100%;
-        width: 70%;
+        width: 60%;
     }
 
     .subscribe__content-input {
@@ -419,11 +427,17 @@
 
     .subscribe__content-button {
         width: 40%;
+        margin-left: 20px;
     }
 
 }
 
 @media only screen and (max-width: 641px) {
+
+    :root {
+        --h1-font: 26px;
+        --h2-font: 16px;
+    }
 
     .banner__content-text {
         max-width: 95px;
@@ -447,6 +461,28 @@
         width: 85%;
     }
 
+    .subscribe__content-form {
+        width: 65%;
+    }
+
+    .subscribe__content-input {
+        padding: 6px 11px;
+    }
+
+    .subscribe__content-button {
+        padding: 6px 11px;
+        margin-left: unset;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+    .header {
+        flex-flow: column;
+        justify-content: unset;
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width: 415px) {
@@ -464,6 +500,10 @@
         width: 75%;
     }
 
+    .subscribe__content-button {
+        width: 60%;
+    }
+
     .footer__panel {
         justify-content: center;
     }
@@ -472,5 +512,24 @@
         margin-top: 10px;
         width: 75%;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .header {
+        height: 80px;
+    }
+
+    .header__panel-link {
+        padding: 3px 5px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+
+    .header__panel-link {
+        font-size: 11px;
     }
 }

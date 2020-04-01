@@ -124,7 +124,7 @@
 .banner__content-item {
     display: flex;
     align-items: flex-end;
-    width: 50%;
+    flex-basis: 50%;
     color: var(--banner-item-color);
 }
 
@@ -475,7 +475,15 @@
 @media only screen and (max-width: 415px) {
 
     .banner__content-container {
-        height: 320px;
+        flex-direction: column;
+    }
+
+    .banner__content-item {
+        flex-basis: 25%;
+    }
+
+    .banner__content-item:nth-child(2) .banner__content-background {
+        opacity: 0.5;
     }
 
     .worker-panel__content {

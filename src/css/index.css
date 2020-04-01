@@ -135,19 +135,19 @@
 }
 
 .banner__content-item:nth-child(1) .banner__content-background {
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .banner__content-item:nth-child(2) .banner__content-background {
-    opacity: 40%;
+    opacity: 0.4;
 }
 
 .banner__content-item:nth-child(3) .banner__content-background {
-    opacity: 40%;
+    opacity: 0.4;
 }
 
 .banner__content-item:nth-child(4) .banner__content-background {
-    opacity: 10%;
+    opacity: 0.1;
 }
 
 .banner__content-item:nth-child(4) .banner__content-text {

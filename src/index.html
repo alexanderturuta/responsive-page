@@ -2,10 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Responsive Page</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
+<body class="body">
+<header class="header">
+    <div class="header__title">
+        <h1 class="text header__title-main">WEBSITE NAME</h1>
+        <h4 class="text header__title-sub">lorem ipsum dolor sit amet</h4>
+    </div>
+    <nav class="header__nav">
+        <ul class="header__panel">
+            <li class="header__panel-item"><a class="header__panel-link" href="#">HOME</a></li>
+            <li class="header__panel-item"><a class="header__panel-link" href="#">ABOUT</a></li>
+            <li class="header__panel-item"><a class="header__panel-link" href="#">SERVICES</a></li>
+            <li class="header__panel-item"><a class="header__panel-link" href="#">PORTFOLIO</a></li>
+            <li class="header__panel-item"><a class="header__panel-link" href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="banner">
+        <div class="banner__content">
 
+            <div class="banner__content-container">
+                <div class="banner__content-item">
+                    <div class="banner__content-background"></div>
+                    <h3 class="text banner__content-text">IT AMET ORC AENEAN DIGNIS LOREM</h3>
+                </div>
+                <div class="banner__content-item">
+                    <div class="banner__content-background"></div>
+                    <h3 class="text banner__content-text">IT AMET ORC</h3>
+                </div>
+                <div class="banner__content-item">
+                    <div class="banner__content-background"></div>
+                    <h3 class="text banner__content-text">IT AMET ORC AENEAN</h3>
+                </div>
+                <div class="banner__content-item">
+                    <div class="banner__content-background"></div>
+                    <h3 class="text banner__content-text">IT AMET ORC AENEAN DIGNIS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="title">
+        <div class="title__content">
+            <div class="title__content-text">
+                <h1 class="text title__content-main-text">
+                    DONEC NEC JUSTO EGET FELIS FACILISIS FERMEN
+                </h1>
+                <h3 class="text title__content-subtext">
+                    ALIQUAM PORTTITOR MAURIS SIT AMET ORCI. AENEAN DIGNISSIM NTEGE
+                </h3>
+            </div>
+            <button class="button button--big">
+                <i class="fas fa-long-arrow-alt-right title__content-img"></i>
+                EUROTING NEGESTING
+            </button>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="row__content">
+            <div class="row__content-item">
+                    <span class="row__content-img-border">
+                        <i class="fas fa-cloud-upload-alt row__content-img"></i>
+                    </span>
+                <div class="row__content-article">
+                    <h2 class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</h2>
+                    <p class="text row__content-text">Praesent dapibus, neque id cursus faucibus, tortor neque
+                        egesta</p>
+                </div>
+            </div>
+            <div class="row__content-item">
+                    <span class="row__content-img-border">
+                        <i class="fas fa-umbrella row__content-img"></i>
+                    </span>
+                <div class="row__content-article">
+                    <h2 class="text row__content-title">LOREM IPSUM DOLOR SIT AMET</h2>
+                    <p class="text row__content-text">Caesent dapibus, neque id cursus faucibus, tortor neque
+                        egestas</p>
+                </div>
+            </div>
+            <div class="row__content-item">
+                    <span class="row__content-img-border">
+                        <i class="fas fa-wrench row__content-img"></i>
+                    </span>
+                <div class="row__content-article">
+                    <h2 class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</h2>
+                    <p class="text row__content-text">Ajaesent dapibus, neque id cursus faucibus, tortor neque
+                        egesta</p>
+                </div>
+            </div>
+            <div class="row__content-item">
+                    <span class="row__content-img-border">
+                        <i class="fas fa-cogs row__content-img"></i>
+                    </span>
+                <div class="row__content-article">
+                    <h2 class="text row__content-title">ALIQUAM PORTTITOR MAURIS SIT AMET</h2>
+                    <p class="text row__content-text">Sent dapibus, neque id cursus faucibus, tortor neque egestas
+                        au</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="subscribe__content">
+            <div class="subscribe__content-item">
+                <h1 class="text subscribe__content-text">DONEC NEC JUS</h1>
+            </div>
+            <div class="subscribe__content-item">
+                <input class="subscribe__content-input" type="text" placeholder="your name here...."/>
+            </div>
+            <div class="subscribe__content-item">
+                <input class="subscribe__content-input" type="text" placeholder="your email here...."/>
+            </div>
+            <div class="subscribe__content-item">
+                <input class="button button--medium" type="submit" value="SUBSCRIBE"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="worker-panel">
+        <div class="worker-panel__content">
+            <div class="worker-panel__content-item">
+                <img class="worker-panel__content-img" src="assets/face1.png" alt="face"/>
+                <h2 class="text worker-panel__content-title">
+                    ALIQUAM PORTTITO
+                </h2>
+                <p class="text worker-panel__content-text">
+                    Praesent dapibus, neque id cursus faucibus, tortor neque egesta
+                </p>
+                <button class="button button--small">MORE</button>
+            </div>
+            <div class="worker-panel__content-item">
+                <img class="worker-panel__content-img" src="assets/face2.png" alt="face"/>
+                <h2 class="text worker-panel__content-title">
+                    ALIQUAM PORTTITO
+                </h2>
+                <p class="text worker-panel__content-text">
+                    Lore esent dapibus, neque id cursus faucibus, tortor neque eges
+                </p>
+                <button class="button button--small">MORE</button>
+            </div>
+            <div class="worker-panel__content-item">
+                <img class="worker-panel__content-img" src="assets/face3.png" alt="face"/>
+                <h2 class="text worker-panel__content-title">
+                    ALIQUAM PORTTITO
+                </h2>
+                <p class="text worker-panel__content-text">
+                    Dolo sent dapibus, neque id cursus faucibus, tortor neque egest
+                </p>
+                <button class="button button--small">MORE</button>
+            </div>
+            <div class="worker-panel__content-item">
+                <img class="worker-panel__content-img" src="assets/face4.png" alt="face"/>
+                <h2 class="text worker-panel__content-title">
+                    ALIQUAM PORTTITO
+                </h2>
+                <p class="text worker-panel__content-text">
+                    Set esent dapibus, neque id cursus faucibus, tortor neque egest
+                </p>
+                <button class="button button--small">MORE</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <ul class="footer__panel">
+        <li class="footer__panel-item">
+            <h2 class="text footer__panel-title">DESIGNED BY</h2>
+            <a class="footer__panel-link" href="http://www.alltemplateneeds.com">www.alltemplateneeds.com</a>
+        </li>
+        <li class="footer__panel-item">
+            <h2 class="text footer__panel-title">PHOTOS FROM</h2>
+            <a class="footer__panel-link" href="http://www.wallpaperswide.com">www.wallpaperswide.com</a>
+        </li>
+        <li class="footer__panel-item">
+            <h2 class="text footer__panel-title">COPYRIGHTS</h2>
+            <p class="text footer__panel-subtext">@2013. Sitename. All rights reserved</p>
+        </li>
+        <li class="footer__panel-item">
+            <h2 class="text footer__panel-title">FOLLOW US</h2>
+            <a class="footer__panel-link" href="http://twitter.com">
+                <i class="fab fa-twitter footer__panel-img"></i>
+                Twitter
+            </a>
+            <a class="footer__panel-link" href="http://facebook.com">
+                <i class="fab fa-facebook-square footer__panel-img"></i>
+                Facebook
+            </a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
